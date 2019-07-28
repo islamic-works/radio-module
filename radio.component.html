@@ -1,0 +1,7 @@
+<DockLayout class="page">
+   <label dock="top" text="Radio" class="header"></label>
+   <FlexboxLayout dock="bottom" class="footer">
+      <ns-menu [active]="active"></ns-menu>
+   </FlexboxLayout>
+   <WebView #myWebView height="100%" dock="left" [src]="webViewSrc"></WebView>
+</DockLayout>
