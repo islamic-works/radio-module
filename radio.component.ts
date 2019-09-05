@@ -13,7 +13,7 @@ export class RadioComponent implements OnInit, AfterViewInit {
 
     @ViewChild("myWebView", { read: ElementRef, static: false }) webViewRef: ElementRef;
 
-    protected webViewSrc: string;
+    webViewSrc: string;
     active: string;
 
     constructor(private _page: Page) { }
@@ -21,7 +21,7 @@ export class RadioComponent implements OnInit, AfterViewInit {
     ngOnInit(): void {
         this.webViewSrc = "http://mixlr.com/ahlussunnahfortaleza/embed";
 
-        this.active = "about";
+        this.active = "radio";
         this._page.actionBarHidden = true;
     }
     ngAfterViewInit() {
